@@ -8,3 +8,6 @@ If you would like to submit a bug report or feature request, or are looking for 
 2. Clone this repository and `cd` into it.
 3. Run `npm install` to install the dependencies.
 4. Run `npm run dev` to start a development server listening on http://localhost:3000/.
+
+## Note on Account Creation
+You need to create separate accounts for test instances (localhost, [https://test.bootstrap.academy](https://test.bootstrap.academy), PullRequest-preview pages) and live instances ([https://bootstrap.academy](https://bootstrap.academy)). These are two separate database systems.
