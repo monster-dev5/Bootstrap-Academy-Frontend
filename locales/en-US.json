@@ -363,7 +363,7 @@
     "Instructor": "Instructor",
     "Summary": "Summary",
     "CreationDate": "Creation date",
-    "EmptySubtasks" : "In this lecture, there are no quizzes yet.",
+    "EmptySubtasks": "In this lecture, there are no quizzes yet.",
     "MyAccount": "My Account"
   },
   "Body": {
@@ -581,7 +581,7 @@
     "HeroFAQS": {
       "1": {
         "Heading": "How can I participate? How can I get MorphCoins?",
-        "Body": "There are several possibilities to help us - and get coins: We're regularly offering small jobs, you can help me with a certain video, you can host a webinar, become a coach or an examiner or you can help us with finding and repairing bugs. More details are"
+        "Body": "There are several possibilities to help us - and get coins: We're regularly offering small jobs, you can help me with a certain video, you can host a webinar, become a coach or an examiner or you can help us with finding and repairing bugs. Additionally, you can buy MorphCoins directly via PayPal, SEPA direct debit, giropay, and debit/credit card. All payment methods are processed through PayPal. More details are"
       },
       "2": {
         "Heading": "Is MorphCoin a cryptocurrency?",
@@ -603,7 +603,7 @@
     "GetMorphcoins": {
       "1": {
         "Heading": "Buy MorphCoins ",
-        "Body": "You can buy MorphCoins using euros from shop."
+        "Body": "You can buy MorphCoins using euros in the shop. This is possible directly via PayPal, SEPA direct debit, giropay, and debit/credit card. All payment methods are processed through PayPal."
       },
       "2": {
         "Heading": "Jobs",
