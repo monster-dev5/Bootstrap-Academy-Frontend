@@ -20,13 +20,16 @@
       :activeStepper="activeStepper"
       @activeStepper="activeStepper = $event"
     />
-    <div class="h-fit pointer-events-none">
+    <div class="h-fit">
       <SkillTreeNodeSvg
         :size="nodeSize"
         :node="subSkill"
         :active="true"
         :completed="subSkill?.completed ?? false"
         class="mx-auto"
+        :navigate="false"
+        :isBookmarked="isNodeBookmarked"
+        @bookmarked="toggleBookmark"
       />
       <h6
         class="text-heading-4 lg:text-heading-3 xl:text-heading-2 text-center mt-card-sm"
@@ -52,7 +55,6 @@
 import { defineComponent } from "vue";
 import type { Ref } from "vue";
 import { useI18n } from "vue-i18n";
-import type { Quiz } from "~/types/courseTypes";
 import { getQuizzesInSkill, useQuizzes } from "~~/composables/quizzes";
 definePageMeta({
   middleware: ["auth"],
@@ -68,6 +70,8 @@ export default defineComponent({
     const activeStepper = ref(0);
 
     const subSkillTree: Ref<any> = useSubSkillTree();
+
+    const isNodeBookmarked = ref(false);
 
     const courses = useCourses();
     const coachings = useCoachings();
@@ -93,7 +97,9 @@ export default defineComponent({
 
     const subSkill = computed(() => {
       let skills: any[] = subSkillTree.value?.skills ?? [];
-      return skills.find((skill) => skill.id == subSkillID.value);
+      let sub_skill = skills.find((skill) => skill.id == subSkillID.value);
+      isNodeBookmarked.value = sub_skill?.isBookmarked ?? false;
+      return sub_skill;
     });
 
     const courseIDs = computed(() => {
@@ -136,6 +142,23 @@ export default defineComponent({
 
     const nodeSize = ref(150);
 
+    async function toggleBookmark(isBookmarked: boolean) {
+      isNodeBookmarked.value = isBookmarked;
+
+      try {
+        if (isBookmarked) {
+          await createBookmark(subSkill.value.parent_id, subSkill.value.id);
+        } else {
+          await deleteBookmark(subSkill.value.parent_id, subSkill.value.id);
+        }
+
+        isNodeBookmarked.value = isBookmarked;
+      } catch (error) {
+        isNodeBookmarked.value = !isBookmarked;
+        console.error(`Bookmark ${isBookmarked ? "creation" : "deletion"} failed!`);
+      }
+    }
+
     onMounted(async () => {
       if (window) {
         updateWindowWidth();
@@ -159,8 +182,6 @@ export default defineComponent({
       loading.value = false;
     });
 
-
-
     onUnmounted(() => {
       if (window) {
         window.removeEventListener("resize", updateWindowWidth);
@@ -182,9 +203,9 @@ export default defineComponent({
       skillName,
       breadcrumbs,
       quizzes,
+      toggleBookmark,
+      isNodeBookmarked
     };
   },
 });
 </script>
-
-<style scoped></style>
