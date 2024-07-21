@@ -75,7 +75,7 @@ export default defineComponent({
     const nodeRef = ref<SVGElement | null>(null);
 
     const current_node = computed(() => {
-      isNodeBookmarked.value = props.node?.isBookmarked ?? false;
+      isNodeBookmarked.value = props.node?.is_bookmarked ?? false;
       return {
         id: props.node?.id ?? '',
         name: props.node?.name ?? '',
@@ -83,7 +83,7 @@ export default defineComponent({
         row: props.node?.row ?? props.row,
         column: props.node?.column ?? props.column,
         icon: props.node?.icon ?? '',
-        isBookmarked: props.node?.isBookmarked ?? false,
+        is_bookmarked: props.node?.is_bookmarked ?? false,
       };
     });
 

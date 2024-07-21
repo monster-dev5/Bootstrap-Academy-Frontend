@@ -98,7 +98,7 @@ export default defineComponent({
     const subSkill = computed(() => {
       let skills: any[] = subSkillTree.value?.skills ?? [];
       let sub_skill = skills.find((skill) => skill.id == subSkillID.value);
-      isNodeBookmarked.value = sub_skill?.isBookmarked ?? false;
+      isNodeBookmarked.value = sub_skill?.is_bookmarked ?? false;
       return sub_skill;
     });
 
