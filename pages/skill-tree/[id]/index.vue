@@ -15,7 +15,7 @@
 
     <section
       v-else-if="nodes && nodes.length"
-      class="map w-screen h-fit m-auto max-w-[100vw] h-screen-main overflow-scroll"
+      class="map w-screen h-fit m-auto max-w-[100vw] h-screen-main overflow-auto"
       ref="mainRef"
     >
       <svg :width="mapWidth" :height="mapHeight" :viewBox="mapViewBox">
