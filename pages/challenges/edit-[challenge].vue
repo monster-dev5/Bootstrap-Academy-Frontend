@@ -37,7 +37,7 @@
         class="mb-card mx-auto"
       />
       <article></article>
-      <LazyFormChallenge :data="challengeData" />
+      <LazyFormChallenge v-if="challengeData" :data="challengeData" />
     </section>
 
     <section v-else-if="selectedTab == 1" class="container-form max-w-4xl">
