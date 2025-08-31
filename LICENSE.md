@@ -16,7 +16,7 @@ For information about alternative licensing arrangements for the Licensed Work, 
 
 ## Notice
 
-### Terms
+### 1.Terms
 
 The Licensor hereby grants you the right to copy, modify, create derivative works, and make non-production use of the Licensed Work. Redistribution or distribution of the Licensed Work or any derivative works is strictly prohibited.
 
@@ -32,14 +32,14 @@ This License does not grant you any right in any trademark or logo of Licensor.
 
 TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
 
-### Limitation of Liability
+### 2.Limitation of Liability
 
 TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DAMAGES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING FROM, OUT OF, OR IN CONNECTION WITH THE LICENSED WORK OR THE USE OF THE LICENSED WORK, WHETHER BASED ON CONTRACT, TORT, OR OTHERWISE.
 
-### Indemnification
+### 3.Indemnification
 
 You agree to indemnify, defend, and hold harmless the Licensor from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) that arise from or relate to your use or misuse of the Licensed Work. The Licensor reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you and, in such case, you agree to cooperate with the Licensor's defense of such claim.
 
-### Governing Law and Jurisdiction
+### 4.Governing Law and Jurisdiction
 
 This License shall be governed by and construed in accordance with the laws of Germany, without regard to its conflict of laws principles. Any legal action or proceeding relating to this License shall be brought exclusively in the courts of Karlsruhe, Germany, and you hereby consent to the jurisdiction and venue of such courts.
