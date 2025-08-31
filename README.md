@@ -11,3 +11,6 @@ If you would like to submit a bug report or feature request, or are looking for 
 
 ## Note on Account Creation
 You need to create separate accounts for test instances (localhost, [https://test.bootstrap.academy](https://test.bootstrap.academy), PullRequest-preview pages) and live instances ([https://bootstrap.academy](https://bootstrap.academy)). These are two separate database systems.
+
+If you have any question with this project, feel free reach out.
+We'll always give you full correct answer!
